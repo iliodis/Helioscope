@@ -13,7 +13,7 @@ Redarding the data, we used *pyspedas* to download the desired data in Common Da
 The data downloaded refer to 22 days around Encounter 4, a time period where at least three PSP instruments were working properly. During this encounter, the PSP reached perihelion on 2020-01-29/09:37, with its distance to the Sun being 0.13 au (27.8 RS).
 
 ## Data manipulation
-Afte downloading the data and downsampling them where needed to achieve relatively high resolution and small volume at the same time, we saved them in csv format, keeping only the numerical data in order to reduce space and manipulate it easily with python and c#.
+After downloading the data and downsampling them where needed to achieve relatively high resolution and small volume at the same time, we saved them in csv format, keeping only the numerical data in order to reduce space and manipulate it easily with python and c#.
 
 ### FIELDS Data
 For FIELDS data $(B_r, B_t, B_n)$ we calculated the total magnetic field $|B|$ and matched it to an rgba number in order to quantify the total field with a colorbar. These quadruplets (rgba) were saved in the same csv, concluding to $(B_r, B_t, B_n, flags, r, g, b, a)$. A sample of the colorbar used is given below, for the date 19/01/2022
